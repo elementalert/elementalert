@@ -4,15 +4,45 @@ div {
   /*border: 1px solid black;*/
 }
 
+html {
+
+}
+
+#ion-content {
+  margin-top: 30px;
+}
+
+.city-card {
+  min-width: 60%;
+  max-width: 60%;
+  height: 100px;
+  text-align: center;
+  margin: 20px auto;
+  background: url(../img/adam.jpg);
+  background-size: cover;
+}
+
+.nav-card {
+  min-width: 35%;
+  max-width: 35%;
+  height: 35%;
+  margin: 20px auto;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: rgba(0, 0, 0, .7);
+}
+
 #header {
   width: 100%;
   text-align: center;
   height: 70px;
   color: rgba(0, 0, 0, .7);
+
 }
 
 #logo {
-  margin-right: 40px; /* This should equal #logo-icon.font-size */
+  /*margin-right: 40px; !* This should equal #logo-icon.font-size *!*/
 }
 
 #logo-name {
@@ -29,5 +59,6 @@ div {
   font-size: 30px;
   /*margin-left: 30px;*/
 }
+
 
 

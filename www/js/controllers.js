@@ -1,6 +1,19 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, PollingFactory) {
+   $scope.currency_data = {}
+
+   $scope.pollThailand = function () {
+
+    PollingFactory.pollOnce('/currency/THB', function (api_data){
+      $scope.currency_data = api_data;
+      console.log($scope.currency_data);
+    })
+
+  };
+
+  $scope.pollThailand();
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -22,7 +35,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
+  $scope.currency_data = {}
+
   $scope.settings = {
     enableFriends: true
   };
+
 });
