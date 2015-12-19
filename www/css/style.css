@@ -1,0 +1,33 @@
+/* Header */
+
+div {
+  /*border: 1px solid black;*/
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  height: 70px;
+  color: rgba(0, 0, 0, .7);
+}
+
+#logo {
+  margin-right: 40px; /* This should equal #logo-icon.font-size */
+}
+
+#logo-name {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#logo-icon {
+  font-size: 40px;
+  vertical-align: bottom;
+}
+
+#new-alert-icon {
+  font-size: 30px;
+  /*margin-left: 30px;*/
+}
+
+
