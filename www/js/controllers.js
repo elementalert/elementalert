@@ -1,7 +1,15 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, PollingFactory) {
-   $scope.currency_data = {}
+
+
+  $scope.cards = [
+    {'month': 'JUN', 'day': '29', 'city': 'Chiang Mai', 'temp': '69'},
+    {'month': 'OCT', 'day': '22', 'city': 'River Styx', 'temp': '32'},
+    {'month': 'NOV', 'day': '01', 'city': 'Bahstin', 'temp': '15'}
+  ];
+
+   $scope.currency_data = {};
 
    $scope.pollThailand = function () {
 
