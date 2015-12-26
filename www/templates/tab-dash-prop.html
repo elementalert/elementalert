@@ -1,4 +1,4 @@
-<ion-view view-title="">
+<ion-view view-title="" >
   <ion-content class="">
  <!--     <div class="row">
         <div class="card city-card col">
@@ -6,29 +6,46 @@
         </div>
       </div>
       -->
-      <div class="row" ng-repeat="card in cards">
-          <div class="card dash-card col">
-              <div class="row">
-                  <div class="dash-card-left col">
-                      <div class="dash-card-date">
-                          <b>{{ card.month }}</b>&nbsp;{{ card.day }}
-                      </div>
-                      <div>
-                        <span class="dash-card-city">{{ card.city }}</span>
-                      </div>
+      <div class="row">
+          <div class="square-box">
+              <div class="square-content">
+                  <div>
+                      <span>
+                        <i class="icon ion-ios-thunderstorm-outline square-icon" style="font-size: 125px;"></i>
+                      </span>
                   </div>
-                  <div class="dash-card-right col">
-                      <div class="col">
-                          <div class="dash-card-right text-center">
-                              <div class="dash-card-icon"><i class="ion-ios-sunny"></i></div>
-                              <div>{{ card.temp }}</div>
-                          </div>
-                      </div>
-                  </div>
-
               </div>
           </div>
-
+           <div class="square-box">
+              <div class="square-content">
+                  <div>
+                      <span>
+                        <i class="icon ion-cash square-icon"></i>
+                      </span>
+                  </div>
+                  <div></div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="square-box">
+              <div class="square-content">
+                  <div>
+                      <span>
+                        <i class="icon ion-settings square-icon"></i>
+                      </span>
+                  </div>
+              </div>
+          </div>
+           <div class="square-box">
+              <div class="square-content">
+                  <div>
+                      <span>
+                        <i class="icon ion-ios-medkit-outline square-icon"></i>
+                      </span>
+                  </div>
+              </div>
+          </div>
       </div>
   </ion-content>
 </ion-view>

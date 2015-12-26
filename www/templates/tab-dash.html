@@ -6,29 +6,22 @@
         </div>
       </div>
       -->
-      <div class="row" ng-repeat="card in cards">
-          <div class="card dash-card col">
-              <div class="row">
-                  <div class="dash-card-left col">
-                      <div class="dash-card-date">
-                          <b>{{ card.month }}</b>&nbsp;{{ card.day }}
-                      </div>
-                      <div>
-                        <span class="dash-card-city">{{ card.city }}</span>
-                      </div>
-                  </div>
-                  <div class="dash-card-right col">
-                      <div class="col">
-                          <div class="dash-card-right text-center">
-                              <div class="dash-card-icon"><i class="ion-ios-sunny"></i></div>
-                              <div>{{ card.temp }}</div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
+      <div class="row">
+          <div class="card nav-card col col-50">
+              <span><i class="icon ion-ios-thunderstorm-outline"></i></span>
           </div>
 
+          <div class="card nav-card col col-50">
+              <span><i class="icon ion-cash"></i></span>
+          </div>
+      </div>
+      <div class="row">
+          <div class="card nav-card col col-50">
+              <span><i class="icon ion-settings"></i></span>
+          </div>
+          <div class="card nav-card col col-50">
+              <span><i class="icon ion-ios-medkit-outline"></i></span>
+          </div>
       </div>
   </ion-content>
 </ion-view>
